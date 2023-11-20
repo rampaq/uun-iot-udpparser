@@ -1,0 +1,35 @@
+{
+  "name": "martia-flot-serve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "mocha -t 60000 --exit --recursive ",
+    "dev": "LOG_LEVEL=debug LOG_PRETTY=1 node ./src/index.js",
+    "testdev": "LOG_LEVEL=debug LOG_PRETTY=1 mocha -t 30000 --exit --recursive",
+    "lint": "./node_modules/eslint/bin/eslint.js -c .eslintrc.json --fix ."
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "cbor": "^9.0.1",
+    "mqtt": "^5.3.0",
+    "pino": "^8.16.2",
+    "pino-pretty": "^10.2.3",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3",
+    "wait-queue": "^1.1.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
