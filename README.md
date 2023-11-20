@@ -1,4 +1,4 @@
-# UDP Server ith CBOR Decoder
+# UDP Server with CBOR Decoder
 
 Data forwarding via the HTTP endpoint is activated using the `HTTP_URL` variable. Example: HTTP_URL="https://best.app.example"
 
@@ -39,3 +39,11 @@ docker run --rm -it -p 1883:1883 eclipse-mosquitto mosquitto -c /mosquitto-no-au
 ```
 DOCKER_BUILDKIT=1 docker compose up
 ```
+
+## License
+
+This project is licensed under the [**MIT License**](https://opensource.org/licenses/MIT) - see the [**LICENSE**](LICENSE) file for details.
+
+---
+
+Made with ❤️ by [**HARDWARIO a.s.**](https://www.hardwario.com) in the heart of Europe.
