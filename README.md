@@ -1,5 +1,8 @@
 # UDP Server ith CBOR Decoder
 
+Data forwarding via the HTTP endpoint is activated using the `HTTP_URL` variable. Example: HTTP_URL="https://best.app.example"
+
+Forwarding via MQTT with `MQTT_ENABLE=true`
 ## Environ
 
 | Name | Default |
@@ -8,6 +11,8 @@
 | DECODER_YAML | ./decoder.yaml |
 | LOG_LEVEL | info
 | LOG_PRETTY | false
+| HTTP_URL | |
+| MQTT_ENABLE | false
 | MQTT_BROKER_URL | mqtt://localhost:1883
 | MQTT_USERNAME | null |
 | MQTT_PASSWORD | null |
@@ -15,7 +20,6 @@
 | MQTT_CA | null |
 | MQTT_CERT | null |
 | MQTT_KEY | null |
-
 
 ## Local dev
 

@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 const fs = require('fs');
 const log = require('./log');
+const axios = require('axios');
 const UDPServer = require('./UDPServer');
 const MQTTClient = require('./MQTTClient');
 const { getDecoderFromFile } = require('./decoder');
@@ -35,7 +36,27 @@ const decoder = getDecoderFromFile(decoderYaml);
 
 log.info('Connecting to MQTT broker: %s', mqttUrl);
 
-const mqttclient = new MQTTClient(mqttUrl, mqttOptions);
+const mqttclient = process.env.MQTT_ENABLE ? new MQTTClient(mqttUrl, mqttOptions) : null;
+const httpUrl = process.env.HTTP_URL || null;
+
+async function publish(msg) {
+  if (mqttclient) {
+    const payload = JSON.stringify(msg, (key, value) => (typeof value === 'bigint'
+      ? value.toString()
+      : value));
+    mqttclient.publish(`chester/${msg.serial_number}`, payload);
+  }
+
+  if (httpUrl) {
+    axios.post(process.env.HTTP_URL, msg, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).catch((err) => {
+      log.error(err);
+    });
+  }
+}
 
 const udpserver = new UDPServer();
 
@@ -44,11 +65,7 @@ udpserver.on('message', (msg) => {
   msg.data = decoder.decode(msg.raw);
   msg.raw = msg.raw.toString('hex');
 
-  const payload = JSON.stringify(msg, (key, value) => (typeof value === 'bigint'
-    ? value.toString()
-    : value));
-
-  mqttclient.publish(`chester/${msg.serial_number}`, payload);
+  publish(msg);
 });
 
 udpserver.listen(process.env.PORT || 5000);
