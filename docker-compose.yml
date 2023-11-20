@@ -1,0 +1,23 @@
+version: '3.6'
+
+services:
+
+  mqtt-broker:
+    image: eclipse-mosquitto
+    command: ["mosquitto", "-c", "/mosquitto-no-auth.conf"]
+    ports:
+    - "1883:1883"
+
+  flot-server:
+    build: .
+    restart: unless-stopped
+    environment:
+      LOG_LEVEL: debug
+      LOG_PRETTY: 1
+      MQTT_BROKER_URL: mqtt://mqtt-broker
+
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mqtt-broker
+
