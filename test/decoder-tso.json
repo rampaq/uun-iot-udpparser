@@ -1,0 +1,77 @@
+{
+  "frame": {
+    "protocol": 1,
+    "sequence": 3
+  },
+  "sensor": {
+    "thermometer": {
+      "temperature": 23.93
+    },
+    "accelerometer": {
+      "acceleration": {
+        "axis_x": -0.15,
+        "axis_y": -0.01,
+        "axis_z": 0.98
+      },
+      "orientation": 1
+    },
+    "tracking": [
+      {
+        "timestamp": 1652683835,
+        "lon": 14.153505325317383,
+        "lat": 50.78363037109375,
+        "altitude": 259,
+        "speed": 23.4
+      },
+      {
+        "timestamp": 1652683865,
+        "lon": 14.153465270996094,
+        "lat": 50.783443450927734,
+        "altitude": 246,
+        "speed": 4.6
+      },
+      {
+        "timestamp": 1652683895,
+        "lon": 14.153559684753418,
+        "lat": 50.783607482910156,
+        "altitude": 246,
+        "speed": 11.2
+      },
+      {
+        "timestamp": 1652683925,
+        "lon": 14.153172492980957,
+        "lat": 50.783042907714844,
+        "altitude": 236,
+        "speed": 16.3
+      },
+      {
+        "timestamp": 1652683955,
+        "lon": 14.153388977050781,
+        "lat": 50.7835578918457,
+        "altitude": 216,
+        "speed": 2
+      },
+      {
+        "timestamp": 1652683985,
+        "lon": 14.153724670410156,
+        "lat": 50.78364944458008,
+        "altitude": 178,
+        "speed": 1.1
+      },
+      {
+        "timestamp": 1652684015,
+        "lon": 14.15375804901123,
+        "lat": 50.78390884399414,
+        "altitude": 152,
+        "speed": 0.4
+      },
+      {
+        "timestamp": 1652684045,
+        "lon": 14.153731346130371,
+        "lat": 50.78377151489258,
+        "altitude": 160,
+        "speed": 10.4
+      }
+    ]
+  }
+}

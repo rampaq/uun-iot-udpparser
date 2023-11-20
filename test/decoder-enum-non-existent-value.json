@@ -1,0 +1,189 @@
+{
+  "message": {
+    "version": 1,
+    "sequence": 2,
+    "timestamp": 1670423894
+  },
+  "attribute": {
+    "vendor_name": "HARDWARIO",
+    "product_name": "CHESTER-M",
+    "hw_variant": "CDGLS",
+    "hw_revision": "R3.2",
+    "fw_name": "(unset)",
+    "fw_version": "(unset)",
+    "serial_number": "2159018247"
+  },
+  "system": {
+    "uptime": 483,
+    "voltage_rest": 4.74,
+    "voltage_load": 4.65,
+    "current_load": 46
+  },
+  "network": {
+    "imei": 351358815178303,
+    "imsi": 901288003957939,
+    "parameter": {
+      "eest": 7,
+      "ecl": 0,
+      "rsrp": -88,
+      "rsrq": -7,
+      "snr": 13,
+      "plmn": 23003,
+      "cid": 939040,
+      "band": 20,
+      "earfcn": 6447
+    }
+  },
+  "thermometer": {
+    "temperature": 24.31
+  },
+  "accelerometer": {
+    "acceleration_x": 0.07,
+    "acceleration_y": 0.22,
+    "acceleration_z": 9.8,
+    "orientation": 2
+  },
+  "event": {
+    "trigger_active": false,
+    "trigger_inactive": false,
+    "line_present": false,
+    "line_not_present": false
+  },
+  "trigger": {
+    "level": "(enum:5)",
+    "events": [
+      {
+        "timestamp": 1670423510,
+        "level": "(enum:3)"
+      },
+      {
+        "timestamp": 1670423512,
+        "level": "inactive"
+      }
+    ]
+  },
+  "counter": {
+    "value": 6,
+    "measurements": [
+      {
+        "timestamp": 1670423574,
+        "value": 6
+      },
+      {
+        "timestamp": 1670423724,
+        "value": 6
+      },
+      {
+        "timestamp": 1670423874,
+        "value": 6
+      }
+    ]
+  },
+  "voltage": {
+    "measurements": [
+      {
+        "timestamp": 1670423574,
+        "min": 11.33,
+        "max": 11.34,
+        "avg": 11.33,
+        "mdn": 11.34
+      },
+      {
+        "timestamp": 1670423724,
+        "min": 11.33,
+        "max": 11.33,
+        "avg": 11.33,
+        "mdn": 11.33
+      },
+      {
+        "timestamp": 1670423874,
+        "min": 11.33,
+        "max": 11.34,
+        "avg": 11.33,
+        "mdn": 11.34
+      }
+    ]
+  },
+  "current": {
+    "measurements": [
+      {
+        "timestamp": 1670423574,
+        "min": 15.85,
+        "max": 15.9,
+        "avg": 15.88,
+        "mdn": 15.9
+      },
+      {
+        "timestamp": 1670423724,
+        "min": 15.9,
+        "max": 15.94,
+        "avg": 15.92,
+        "mdn": 15.94
+      },
+      {
+        "timestamp": 1670423874,
+        "min": 15.94,
+        "max": 15.99,
+        "avg": 15.97,
+        "mdn": 15.99
+      }
+    ]
+  },
+  "hygrometer": {
+    "temperature": {
+      "measurements": [
+        {
+          "timestamp": 1670423574,
+          "min": 24.34,
+          "max": 24.36,
+          "avg": 24.35,
+          "mdn": 24.36
+        },
+        {
+          "timestamp": 1670423724,
+          "min": 24.33,
+          "max": 24.37,
+          "avg": 24.35,
+          "mdn": 24.36
+        },
+        {
+          "timestamp": 1670423874,
+          "min": 24.31,
+          "max": 24.37,
+          "avg": 24.34,
+          "mdn": 24.37
+        }
+      ]
+    },
+    "humidity": {
+      "measurements": [
+        {
+          "timestamp": 1670423574,
+          "min": 48.7,
+          "max": 48.91,
+          "avg": 48.8,
+          "mdn": 48.91
+        },
+        {
+          "timestamp": 1670423724,
+          "min": 48.57,
+          "max": 48.66,
+          "avg": 48.63,
+          "mdn": 48.66
+        },
+        {
+          "timestamp": 1670423874,
+          "min": 48.57,
+          "max": 48.73,
+          "avg": 48.65,
+          "mdn": 48.73
+        }
+      ]
+    }
+  },
+  "backup": {
+    "line_present": true,
+    "line_voltage": 9.2,
+    "batt_voltage": 3.41
+  }
+}

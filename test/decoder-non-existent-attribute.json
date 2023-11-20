@@ -1,0 +1,20 @@
+{
+  "frame": {
+    "protocol": 1,
+    "sequence": 0
+  },
+  "sensor": {
+    "thermometer": {
+      "temperature": 24.75
+    },
+    "accelerometer": {
+      "acceleration": {
+        "axis_x": 0.03,
+        "axis_y": -0.09,
+        "axis_z": 1
+      },
+      "orientation": 1
+    },
+    "(key:12)": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "frame": {
+    "protocol": 3,
+    "sequence": 0,
+    "timestamp": 1649666353
+  },
+  "attribute": {
+    "vendor_name": "HARDWARIO",
+    "product_name": "CHESTER",
+    "hw_variant": "CGLS",
+    "hw_revision": "R3.2",
+    "fw_version": "(unset)",
+    "serial_number": "2155872514"
+  },
+  "state": {
+    "uptime": 22
+  },
+  "network": {
+    "imei": 352656109430861,
+    "imsi": 901288003957932,
+    "parameter": {
+      "eest": null,
+      "ecl": null,
+      "rsrp": null,
+      "rsrq": null,
+      "snr": null,
+      "plmn": null,
+      "cid": null,
+      "band": null,
+      "earfcn": null
+    }
+  },
+  "w1_thermometers": [
+    {
+      "temperature_avg": "3244685001307681",
+      "rsrq": "18446744073709551551"
+    }
+  ]
+}

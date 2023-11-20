@@ -1,0 +1,23 @@
+- frame:
+- protocol:
+- sequence:
+- sensor:
+- thermometer:
+- temperature:
+  - div: 100
+- accelerometer:
+- acceleration:
+- axis_x:
+  - div: 100
+- axis_y:
+  - div: 100
+- axis_z:
+  - div: 100
+- orientation:
+- tracking:
+  - tso:
+    - lon:
+    - lat:
+    - altitude:
+    - speed:
+      - div: 10

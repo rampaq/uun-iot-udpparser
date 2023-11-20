@@ -1,0 +1,155 @@
+{
+  "message": {
+    "version": 1,
+    "sequence": 5027,
+    "timestamp": 1700461531
+  },
+  "attribute": {
+    "vendor_name": "HARDWARIO",
+    "product_name": "CHESTER-M",
+    "hw_variant": "CGLS",
+    "hw_revision": "R3.2",
+    "fw_name": "CHESTER Clime",
+    "fw_version": "v2.3.0",
+    "serial_number": "2159019024"
+  },
+  "system": {
+    "uptime": 9072627,
+    "voltage_rest": 3.63,
+    "voltage_load": 3.44,
+    "current_load": 34
+  },
+  "network": {
+    "imei": 351358815181331,
+    "imsi": 901288910018882,
+    "parameter": {
+      "eest": 8,
+      "ecl": 0,
+      "rsrp": -71,
+      "rsrq": -9,
+      "snr": 15,
+      "plmn": 23003,
+      "cid": 1011233,
+      "band": 20,
+      "earfcn": 6447
+    }
+  },
+  "thermometer": {
+    "temperature": 20.3
+  },
+  "accelerometer": {
+    "acceleration_x": -9.43,
+    "acceleration_y": 0,
+    "acceleration_z": 1.6,
+    "orientation": 1
+  },
+  "hygrometer": {
+    "temperature": {
+      "events": [],
+      "measurements": [
+        {
+          "timestamp": 1700459721,
+          "min": 20.64,
+          "max": 20.71,
+          "avg": 20.68,
+          "mdn": 20.67
+        },
+        {
+          "timestamp": 1700460021,
+          "min": 20.63,
+          "max": 20.74,
+          "avg": 20.67,
+          "mdn": 20.66
+        },
+        {
+          "timestamp": 1700460321,
+          "min": 20.6,
+          "max": 20.67,
+          "avg": 20.63,
+          "mdn": 20.63
+        },
+        {
+          "timestamp": 1700460621,
+          "min": 20.57,
+          "max": 20.63,
+          "avg": 20.6,
+          "mdn": 20.61
+        },
+        {
+          "timestamp": 1700460921,
+          "min": 20.57,
+          "max": 20.66,
+          "avg": 20.61,
+          "mdn": 20.6
+        },
+        {
+          "timestamp": 1700461221,
+          "min": 20.5,
+          "max": 20.67,
+          "avg": 20.58,
+          "mdn": 20.55
+        },
+        {
+          "timestamp": 1700461521,
+          "min": 20.47,
+          "max": 20.6,
+          "avg": 20.55,
+          "mdn": 20.55
+        }
+      ]
+    },
+    "humidity": {
+      "measurements": [
+        {
+          "timestamp": 1700459721,
+          "min": 38.83,
+          "max": 39.04,
+          "avg": 38.96,
+          "mdn": 38.97
+        },
+        {
+          "timestamp": 1700460021,
+          "min": 38.89,
+          "max": 39.15,
+          "avg": 39.04,
+          "mdn": 39.09
+        },
+        {
+          "timestamp": 1700460321,
+          "min": 39,
+          "max": 39.17,
+          "avg": 39.09,
+          "mdn": 39.14
+        },
+        {
+          "timestamp": 1700460621,
+          "min": 39.02,
+          "max": 39.24,
+          "avg": 39.14,
+          "mdn": 39.14
+        },
+        {
+          "timestamp": 1700460921,
+          "min": 39.1,
+          "max": 39.22,
+          "avg": 39.15,
+          "mdn": 39.11
+        },
+        {
+          "timestamp": 1700461221,
+          "min": 39.17,
+          "max": 39.27,
+          "avg": 39.22,
+          "mdn": 39.22
+        },
+        {
+          "timestamp": 1700461521,
+          "min": 39.21,
+          "max": 39.38,
+          "avg": 39.29,
+          "mdn": 39.29
+        }
+      ]
+    }
+  }
+}
