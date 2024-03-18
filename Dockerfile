@@ -17,6 +17,7 @@ COPY ./src ./src
 COPY ./decoder.yaml ./decoder.yaml
 
 EXPOSE 5000/udp
+EXPOSE 5000/tcp
 
 CMD [ "pnpm", "start" ]
 

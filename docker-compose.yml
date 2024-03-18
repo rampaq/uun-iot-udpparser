@@ -15,9 +15,12 @@ services:
       LOG_LEVEL: debug
       LOG_PRETTY: 1
       MQTT_BROKER_URL: mqtt://mqtt-broker
+      HTTP_LOG_ENABLE: 1
+      LOG_FILE: './log.json'
 
     ports:
-      - "5000:5000"
+      - "5000:5000/udp"
+      - "5000:5000/tcp"
     depends_on:
       - mqtt-broker
 
