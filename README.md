@@ -20,6 +20,9 @@ Forwarding via MQTT with `MQTT_ENABLE=true`
 | MQTT_CA | null |
 | MQTT_CERT | null |
 | MQTT_KEY | null |
+| HTTP_LOG_ENABLE | true |
+| HTTP_LOG_PORT | 5000 |
+| LOG_FILE | ./log.json |
 
 ## Local dev
 
